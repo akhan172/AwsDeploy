@@ -25,11 +25,11 @@ public class EmpController {
         List<EmpDto> enpData = empService.readAll();
         return ResponseEntity.ok(enpData);
     }
-    @GetMapping("/{id}")
+   /* @GetMapping("/{id}")
     public ResponseEntity<EmpDto> getRecord(@PathVariable Long id){
         EmpDto emp = empService.readById(id);
         return ResponseEntity.ok(emp);
-    }
+    }*/
 
     @PutMapping("/{id}")
     public ResponseEntity<EmpDto> updateRecord(@PathVariable Long id, @RequestBody EmpDto empDto){
